@@ -74,8 +74,9 @@ int main() {
 
     tempo_gasto = (double)(fim - inicio) / CLOCKS_PER_SEC;
     if(opcao == 4)
-        printf("\nResultado final: %lf\n", resultado);
-    printf("\nResultado final: %d\n", resultado);
+        printf("\nResultado final: %lf\n", resultado_div);
+    else
+        printf("\nResultado final: %d\n", resultado);
     printf("Tempo total: %f segundos (%d iteracoes)\n", tempo_gasto, ITERACOES);
 
     return 0;
