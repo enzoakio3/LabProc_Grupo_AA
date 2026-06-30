@@ -15,6 +15,7 @@ int fatorial(int n) {
 int main() {
     int opcao, bits;
     int a, b, resultado;
+    double resultado_div;
 
     clock_t inicio, fim;
     double tempo_gasto;
@@ -25,16 +26,22 @@ int main() {
     printf("1 - Soma\n");
     printf("2 - Subtracao\n");
     printf("3 - Multiplicacao\n");
-    printf("4 - Fatorial\n");
+    printf("4 - Divisao\n");
+    printf("5 - Fatorial\n");
     printf("Opcao: ");
     scanf("%d", &opcao);
 
     printf("Digite a: ");
     scanf("%d", &a);
 
-    if (opcao != 4) {
-        printf("Digite b: ");
-        scanf("%d", &b);
+    if (opcao != 5) {
+        do {
+            printf("Digite b: ");
+            scanf("%d", &b);
+            if (opcao == 4 && b == 0){
+                printf("Erro: divisao por zero. Tente novamente.\n");
+            }
+        } while (opcao == 4 && b == 0);
     }
 
 
@@ -52,6 +59,9 @@ int main() {
                 resultado = a * b;
                 break;
             case 4:
+                resultado_div = (double)a / (double)b;
+                break;
+            case 5:
                 resultado = fatorial(a);
                 break;
             default:
@@ -63,7 +73,8 @@ int main() {
     fim = clock();
 
     tempo_gasto = (double)(fim - inicio) / CLOCKS_PER_SEC;
-
+    if(opcao == 4)
+        printf("\nResultado final: %lf\n", resultado);
     printf("\nResultado final: %d\n", resultado);
     printf("Tempo total: %f segundos (%d iteracoes)\n", tempo_gasto, ITERACOES);
 
