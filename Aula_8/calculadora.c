@@ -50,9 +50,9 @@ int main() {
 
             case 1:
                 printf("Digite o primeiro numero (-128 a 127): ");
-                scanf("%d", &a);
+                scanf("%hhd", &a);
                 printf("Digite o segundo numero (-128 a 127): ");
-                scanf("%d", &b);
+                scanf("%hhd", &b);
 
                 if(a < 0 || a > 15 || b < 0 || b > 15) {
                     printf("Erro: numeros fora do intervalo de 4 bits.\n");
@@ -67,15 +67,15 @@ int main() {
                 fim = clock();
                 
                 tempo_gasto = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
-                printf("Resultado = %d\n", resultado);
-                printf("Tempo total para %d somas: %f segundos\n", ITERACOES, tempo_gasto);
+                printf("Resultado = %hhd\n", resultado);
+                printf("Tempo total para %hhd somas: %f segundos\n", ITERACOES, tempo_gasto);
                 break;
 
             case 2:
                 printf("Digite o primeiro numero (-128 a 127): ");
-                scanf("%d", &a);
+                scanf("%hhd", &a);
                 printf("Digite o segundo numero (-128 a 127): ");
-                scanf("%d", &b);
+                scanf("%hhd", &b);
 
                 if(a < 0 || a > 15 || b < 0 || b > 15) {
                     printf("Erro: numeros fora do intervalo de 4 bits.\n");
@@ -90,15 +90,15 @@ int main() {
                 fim = clock();
 
                 tempo_gasto = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
-                printf("Resultado = %d\n", resultado);
-                printf("Tempo total para %d subtracoes: %f segundos\n", ITERACOES, tempo_gasto);
+                printf("Resultado = %hhd\n", resultado);
+                printf("Tempo total para %hhd subtracoes: %f segundos\n", ITERACOES, tempo_gasto);
                 break;
 
             case 3:
                 printf("Digite o primeiro numero (-128 a 127): ");
-                scanf("%d", &a);
+                scanf("%hhd", &a);
                 printf("Digite o segundo numero (-128 a 127): ");
-                scanf("%d", &b);
+                scanf("%hhd", &b);
 
                 if(a < 0 || a > 15 || b < 0 || b > 15) {
                     printf("Erro: numeros fora do intervalo de 4 bits.\n");
@@ -113,13 +113,13 @@ int main() {
                 fim = clock();
 
                 tempo_gasto = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
-                printf("Resultado = %d\n", resultado);
-                printf("Tempo total para %d multiplicacoes: %f segundos\n", ITERACOES, tempo_gasto);
+                printf("Resultado = %hhd\n", resultado);
+                printf("Tempo total para %hhd multiplicacoes: %f segundos\n", ITERACOES, tempo_gasto);
                 break;
 
             case 4:
                 printf("Digite um numero (-128 a 127): ");
-                scanf("%d", &a);
+                scanf("%hhd", &a);
 
                 if(a < 0 || a > 15) {
                     printf("Erro: numero fora do intervalo de 4 bits.\n");
@@ -163,9 +163,9 @@ int main() {
 
             case 1:
                 printf("Digite o primeiro numero (-32.768 a 32.767): ");
-                scanf("%d", &a);
+                scanf("%hd", &a);
                 printf("Digite o segundo numero (-32.768 a 32.767): ");
-                scanf("%d", &b);
+                scanf("%hd", &b);
 
                 if(a < 0 || a > 15 || b < 0 || b > 15) {
                     printf("Erro: numeros fora do intervalo de 4 bits.\n");
@@ -180,15 +180,15 @@ int main() {
                 fim = clock();
                 
                 tempo_gasto = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
-                printf("Resultado = %d\n", resultado);
-                printf("Tempo total para %d somas: %f segundos\n", ITERACOES, tempo_gasto);
+                printf("Resultado = %hd\n", resultado);
+                printf("Tempo total para %hd somas: %f segundos\n", ITERACOES, tempo_gasto);
                 break;
 
             case 2:
                 printf("Digite o primeiro numero (-32.768 a 32.767): ");
-                scanf("%d", &a);
+                scanf("%hd", &a);
                 printf("Digite o segundo numero (-32.768 a 32.767): ");
-                scanf("%d", &b);
+                scanf("%hd", &b);
 
                 if(a < 0 || a > 15 || b < 0 || b > 15) {
                     printf("Erro: numeros fora do intervalo de 4 bits.\n");
@@ -203,15 +203,15 @@ int main() {
                 fim = clock();
 
                 tempo_gasto = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
-                printf("Resultado = %d\n", resultado);
-                printf("Tempo total para %d subtracoes: %f segundos\n", ITERACOES, tempo_gasto);
+                printf("Resultado = %hd\n", resultado);
+                printf("Tempo total para %hd subtracoes: %f segundos\n", ITERACOES, tempo_gasto);
                 break;
 
             case 3:
                 printf("Digite o primeiro numero (-32.768 a 32.767): ");
-                scanf("%d", &a);
+                scanf("%hd", &a);
                 printf("Digite o segundo numero (-32.768 a 32.767): ");
-                scanf("%d", &b);
+                scanf("%hd", &b);
 
                 if(a < 0 || a > 15 || b < 0 || b > 15) {
                     printf("Erro: numeros fora do intervalo de 4 bits.\n");
@@ -226,13 +226,13 @@ int main() {
                 fim = clock();
 
                 tempo_gasto = ((double)(fim - inicio)) / CLOCKS_PER_SEC;
-                printf("Resultado = %d\n", resultado);
-                printf("Tempo total para %d multiplicacoes: %f segundos\n", ITERACOES, tempo_gasto);
+                printf("Resultado = %hd\n", resultado);
+                printf("Tempo total para %hd multiplicacoes: %f segundos\n", ITERACOES, tempo_gasto);
                 break;
 
             case 4:
                 printf("Digite um numero (-32.768 a 32.767): ");
-                scanf("%d", &a);
+                scanf("%hd", &a);
 
                 if(a < 0 || a > 15) {
                     printf("Erro: numero fora do intervalo de 4 bits.\n");
