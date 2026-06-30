@@ -19,13 +19,7 @@ int main() {
     clock_t inicio, fim;
     double tempo_gasto;
 
-    printf("=== Benchmark de Operacoes Inteiras ===\n");
-
-    printf("Escolha o modo (apenas comparativo):\n");
-    printf("1 - 8 bits (simulado)\n");
-    printf("2 - 16 bits (simulado)\n");
-    printf("3 - 32 bits (nativo int)\n");
-    scanf("%d", &bits);
+    printf("=== Calculadora ===\n");
 
     printf("\nEscolha operacao:\n");
     printf("1 - Soma\n");
@@ -35,18 +29,14 @@ int main() {
     printf("Opcao: ");
     scanf("%d", &opcao);
 
-    printf("Digite a e b (ou apenas a no fatorial): ");
+    printf("Digite a: ");
     scanf("%d", &a);
-    if (opcao != 4) scanf("%d", &b);
 
-    // Simulação simples de bit-width (opcional)
-    if (bits == 1) { // 8 bits
-        a = (int8_t)a;
-        b = (int8_t)b;
-    } else if (bits == 2) { // 16 bits
-        a = (int16_t)a;
-        b = (int16_t)b;
+    if (opcao != 4) {
+        printf("Digite b: ");
+        scanf("%d", &b);
     }
+
 
     inicio = clock();
 
