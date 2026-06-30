@@ -42,7 +42,9 @@ int main() {
         printf("Opcao: ");
         scanf("%d", &opcao);
 
-        int8_t a, b, resultado;
+        int temp;
+        int8_t a, b;
+        volatile int8_t resultado;
 
         switch(opcao) {
 
@@ -153,7 +155,9 @@ int main() {
         printf("Opcao: ");
         scanf("%d", &opcao);
 
-        int16_t a, b, resultado;
+        int temp;
+        int16_t a, b;
+        volatile int16_t resultado;
 
         switch(opcao) {
 
@@ -264,7 +268,9 @@ int main() {
         printf("Opcao: ");
         scanf("%d", &opcao);
 
-        int32_t a, b, resultado;
+        int temp;
+        int32_t a, b;
+        volatile int32_t resultado;
 
         switch(opcao) {
 
