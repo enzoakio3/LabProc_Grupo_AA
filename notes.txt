@@ -1,0 +1,2 @@
+g++ desafio_standalone.cpp Keypad.cpp -o calc_standalone -lwiringPi -lwiringPiDev
+./calc_standalone
