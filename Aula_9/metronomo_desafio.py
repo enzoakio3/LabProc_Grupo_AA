@@ -2,10 +2,10 @@ import time
 import RPi.GPIO as GPIO
 
 SERVO_PIN = 18
-BUZZER_PIN = 27
+BUZZER_PIN = 4
 
-BUTTON_UP = 22
-BUTTON_DOWN = 23
+BUTTON_UP = 16
+BUTTON_DOWN = 26
 
 GPIO.setmode(GPIO.BCM)
 
@@ -16,7 +16,7 @@ GPIO.setup(BUTTON_UP, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setup(BUTTON_DOWN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 servo = GPIO.PWM(SERVO_PIN, 50)
-buzzer = GPIO.PWM(BUZZER_PIN, 1000)
+buzzer = GPIO.PWM(BUZZER_PIN, 262)
 
 servo.start(0)
 buzzer.start(0)
