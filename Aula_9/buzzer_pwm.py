@@ -13,12 +13,12 @@ try:
     buzzer.start(50)
 
     notas = [
-        (65, "Do"),
-        (73, "Mi"),
-        (98, "Sol"),
-        (110, "La"),
-        (130, "Do agudo"),
-        (220, "La agudo")
+        (130, "Do"),
+        (164, "Mi"),
+        (196, "Sol"),
+        (220, "La"),
+        (261, "Do agudo"),
+        (329, "Mi agudo")
     ]
 
     for frequencia, nome in notas:
