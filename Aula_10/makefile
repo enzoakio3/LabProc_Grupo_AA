@@ -15,8 +15,6 @@ all: \
 	teste_teclado_lcd \
 	teste_buzzer \
 	teste_sensor \
-	teste_atuador \
-	teste_senha \
 	fechadura
 
 
@@ -60,22 +58,6 @@ teste_sensor: teste_sensor.cpp
 	$(WIRINGPI_LIBS)
 
 
-teste_atuador: teste_atuador.cpp
-	$(CXX) $(CPPFLAGS) $(CXXFLAGS) \
-	teste_atuador.cpp \
-	-o teste_atuador \
-	$(LDFLAGS) \
-	$(WIRINGPI_LIBS)
-
-
-teste_senha: teste_senha.cpp $(KEYPAD_FILES)
-	$(CXX) $(CPPFLAGS) $(CXXFLAGS) \
-	teste_senha.cpp $(KEYPAD_FILES) \
-	-o teste_senha \
-	$(LDFLAGS) \
-	$(WIRINGPI_LIBS)
-
-
 fechadura: fechadura.cpp $(KEYPAD_FILES)
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) \
 	fechadura.cpp $(KEYPAD_FILES) \
@@ -91,7 +73,6 @@ clean:
 	teste_teclado_lcd \
 	teste_buzzer \
 	teste_sensor \
-	teste_atuador \
 	teste_senha \
 	fechadura
 
